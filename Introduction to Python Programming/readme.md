@@ -260,3 +260,58 @@ print(a is b)  # True (a and b reference the same object)
 # is not
 print(a is not c)  # True (a and c reference different objects)
 ```
+
+## Conditional Statements
+
+Conditional statements in Python allow you to control the flow of your program based on certain conditions. The most commonly used conditional statements are if, elif (else if), and else
+
+### Example 1 - Traffic Signal
+
+```python
+print('1.Red 2.Yellow 3.Green')
+
+signal = int(input())
+
+if signal == 1:
+    print('Stop your vehicle')
+elif signal == 2:
+    print('Start your vehicles')
+elif signal == 3:
+    print('You can go')
+else:
+    print('Please provide valid input')
+```
+
+### Example 2 - Odd Number or Even Number
+
+```python
+num = int(input())
+
+if num%2 == 0:
+    print('It is an even number')
+else:
+    print('It is a odd number')
+```
+
+### Example 3 - Grading System
+
+```python
+'''
+> 90 -> A grade
+> 80 -> B grade
+> 60 -> C grade
+< 60 -> Failed
+'''
+
+marks = int(input())
+
+if marks >= 90:
+    print('A Grade')
+elif marks >= 80:
+    print('B grade')
+elif marks >= 60:
+    print('C Grade')
+else:
+    print('Sorry! You have failed')
+```
+

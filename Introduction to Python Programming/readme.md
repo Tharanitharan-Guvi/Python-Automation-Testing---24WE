@@ -101,3 +101,162 @@ The `input(prompt)` function allows you to take user input.
 name = input("Enter your name: ")
 print("Hello, " + name + "!")
 ```
+
+## Operators
+
+Operators are special symbols or keywords that perform operations on variables and values. Python supports various types of operators, including arithmetic, comparison, logical, assignment, bitwise, membership, and identity operators. Let's go through each type with examples:
+
+### 1. Arithmetic Operators
+
+```
++ - Addition
+- - Subtraction
+* - Multiplication
+/ - Division
+// - Floor Division
+% - Modulo
+** - exponent
+```
+
+```python
+a = 10
+b = 5
+
+# Addition
+sum_result = a + b  # 15
+
+# Subtraction
+diff_result = a - b  # 5
+
+# Multiplication
+prod_result = a * b  # 50
+
+# Division
+div_result = a / b  # 2.0 (result is a float)
+
+# Floor Division
+floor_div_result = a // b  # 2 (returns the quotient as an integer)
+
+# Modulus (remainder)
+mod_result = a % b  # 0
+
+# Exponentiation
+exp_result = a ** b  # 100000
+```
+
+### 2. Comparison Operators
+
+Comparison operators are used to compare values and return a boolean result.
+
+```
+== - Equal to
+!= - Not equat to
+>
+<
+<=
+>=
+```
+
+```python
+x = 10
+y = 20
+
+# Equal to
+print(x == y)  # False
+
+# Not equal to
+print(x != y)  # True
+
+# Greater than
+print(x > y)  # False
+
+# Less than
+print(x < y)  # True
+
+# Greater than or equal to
+print(x >= y)  # False
+
+# Less than or equal to
+print(x <= y)  # True
+```
+
+### 3. Logical Operators
+
+Logical operators are used to combine conditional statements.
+
+```
+and
+
+T T  T
+T F  F
+F T  F
+F F  F
+
+or
+
+T T  T
+T F  T
+F T  T
+F F  F
+
+
+not
+
+T   F
+F   T
+```
+
+```python
+
+p = True
+q = False
+
+# Logical AND
+print(p and q)  # False
+
+# Logical OR
+print(p or q)  # True
+
+# Logical NOT
+print(not p)  # False
+```
+
+### 4. Assignment Operator
+
+Assignment operators are used to assign values to variables.
+
+```python
+a = 10
+b = 20
+```
+
+### 5. Membership Operator
+
+Membership operators test whether a value is a member of a sequence.
+
+```python
+
+my_list = [1, 2, 3, 4, 5]
+
+# In
+print(3 in my_list)  # True
+
+# Not in
+print(6 not in my_list)  # True
+```
+
+### 6. Identity Operators
+
+Identity operators compare the memory addresses of two objects.
+
+```python
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+# is
+print(a is b)  # True (a and b reference the same object)
+
+# is not
+print(a is not c)  # True (a and c reference different objects)
+```
